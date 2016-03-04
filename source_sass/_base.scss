@@ -1,1 +1,143 @@
 // Add any custom Sass & CSS here
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+
+body{
+	background-color: #2c3e50;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.heading{
+	font-size: 3.5em;
+	padding: 30px;
+	padding-bottom: 20px;
+}
+
+.small_heading{
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+
+#gallery{
+	margin-top:30px; 
+	label{
+		color: white;
+		padding: 20px;
+	}
+
+	.gallery_box{
+		padding: 30px; 
+		float: left;
+		a{
+			text-decoration: none;
+		}
+		.inner_box{
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			overflow: hidden;
+			background-position: center center;
+			transition: .5s ease-out all;
+		}
+		.inner_box:hover{
+			transform: scale(1.1);
+		}
+	}
+}
+
+#list{
+	margin-top:30px; 
+	label{
+		color: #2c3e50;
+	}
+	a{
+		color: #2c3e50;
+	}
+	a:hover{
+		color: #2c3e50;
+	}
+
+	.search{
+		background-color: white;
+		padding: 30px;
+		input{
+			color: #2c3e50;
+		}
+		.searchbox{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.outer_box{
+		padding: 20px;
+		color: black;
+		transition: 1s ease all;
+		.inner_box{
+			background-color: white;
+			color: #2c3e50;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			transition: .5s ease-out all;
+
+			h6{
+				padding-top: 30px;
+				color: black;
+			}
+		}
+	}
+	.inner_box:hover{
+		transform: scale(1.1);
+	}
+}
+
+#details{
+	.details_heading{
+		font-size: 1.5em;
+	}
+	min-height: 55vh;
+	margin-top:30px; 
+	padding: 20px;
+	color: #2c3e50;
+	background-color: white;
+	a{
+		color:#2c3e50;
+	}
+
+	.details_top{
+		height: 50px;
+	}
+
+	.detail_box_outer{
+		padding: 10px;
+		height: 40vh;
+
+		.detail_box_inner{
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			overflow: hidden;
+			background-position: center center;
+			transition: .5s ease-out all;
+		}
+	}
+	.details_text{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		color: #2c3e50;
+	}
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    direction: rtl;
+}

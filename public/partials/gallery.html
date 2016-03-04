@@ -1,0 +1,42 @@
+<div class="large-10 large-centered" id = "gallery">
+	<div class="large-12">
+	<label>
+
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="">
+	    All </div>
+
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Thriller">
+	    Thriller</div>
+
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Romance">
+	    Romance</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Action">
+	    Action</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="War">
+	    War</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Adventure">
+	    Adventure</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Crime">
+	    Crime</div>
+	  <div class = "large-2 columns">  <input type="radio" ng-model="direction" name="direction" value="Comedy">
+	    Comedy</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Drama">
+	    Drama</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Musical">
+	    Musical</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Mystery">
+	    Mystery</div>
+	   <div class = "large-2 columns"> <input type="radio" ng-model="direction" name="direction" value="Western">
+	    Western</div>
+
+    </label>
+	</div>
+	<div class="large-12">
+		<div ng-repeat="item in movies | filter:direction" class="large-3 columns gallery_box">
+			<a href="#/details/{{movies.indexOf(item)}}">	
+			<div class="large-12 inner_box" style ="background-image: url('../data/images/{{item.imdbID}}.jpg');">
+			</div>
+			</a>
+		</div>
+	</div>
+</div>

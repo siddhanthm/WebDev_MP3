@@ -1,0 +1,26 @@
+<div class="large-9 large-centered" id="details">
+	<div class="large-12 text-center details_top">
+		<div class="large-3 columns"><a href="#/details/{{prevItem}}" class="fa fa-arrow-left"></a></div>
+		<div class="text-center large-6 columns details_heading">
+			{{movies[whichItem].title}} ({{movies[whichItem].imdbRating}})
+		</div>
+    	<div class="large-3 columns"><a href="#/details/{{nextItem}}" class="fa fa-arrow-right"></a></div>
+    </div>
+    <br>
+    <div class="large-12">
+    	<div class="large-3 columns detail_box_outer">
+    		<div class ="detail_box_inner">
+    		<!--style ="background-image: url('../data/images/{{movies[whichItem].imdbID}}.jpg');"-->
+    		<img ng-src="../data/images/{{movies[whichItem].imdbID}}.jpg">
+    		</div>
+    	</div>
+    	<div class="large-9 columns details_text">
+	    	<b>Plot: </b> {{movies[whichItem].plot}} <br>
+	    	<b>Director: </b>{{movies[whichItem].director[0]}} <br>
+	    	<b>Actors: </b> {{movies[whichItem].actors[0]}}, {{movies[whichItem].actors[1]}} , {{movies[whichItem].actors[2]}}, {{movies[whichItem].actors[3]}} <br>
+	    	<b>Released Date: </b>{{movies[whichItem].released}} <br>
+	    	<b>MetaScore: </b>{{movies[whichItem].metascore}} <br>
+	    	<b>Awards: </b>{{movies[whichItem].awards}}
+    	</div>
+    </div>
+</div>
