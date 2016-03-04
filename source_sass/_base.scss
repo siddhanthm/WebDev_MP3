@@ -12,7 +12,6 @@ a{
 }
 a:hover{
 	text-decoration: none;
-	color: white;
 }
 
 .heading{
@@ -55,6 +54,14 @@ a:hover{
 		.inner_box:hover{
 			transform: scale(1.1);
 		}
+	}
+	.gallery_option{
+		text-align: center;
+		transition: .5s ease-out all;
+	}
+	.gallery_option:hover{
+		color: #ff0030;
+		transform:scale(1.2);
 	}
 }
 

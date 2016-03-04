@@ -32,4 +32,8 @@ movieControllers.controller('GalleryController', ['$scope','$http', function ($s
 	$http.get('../data/imdb250.json').success(function(data){
 		$scope.movies = data;
 	});
+	$scope.filterBy = function(x){
+		$scope.myfilterBy = x;
+	}
+	$scope.myfilterBy = "";
 }]);
