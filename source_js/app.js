@@ -11,5 +11,4 @@ app.config(function ($routeProvider) {
 		templateUrl: '../partials/gallery.html',
 		controller: 'GalleryController'
 	}).otherwise({ redirectTo: '/list' });
-	console.log("here");
 });
