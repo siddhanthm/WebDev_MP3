@@ -19,7 +19,7 @@
 	    </label>
 	</div>
 	<div class="large-6 large-centered">
-		<div ng-repeat="item in movies | filter:query | orderBy:movieOrder:direction | limitTo : 50" class="large-12 outer_box">
+		<div ng-repeat="item in movies | filter:query | orderBy:movieOrder:direction | limitTo : 30" class="large-12 outer_box">
 			<a href="#/details/{{movies.indexOf(item)}}">	
 				<div class="large-12 large-centered inner_box">
 						<h5>{{item.title}}</h5>
