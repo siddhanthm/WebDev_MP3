@@ -2,14 +2,14 @@
 var movieControllers = angular.module('movieControllers', []);
 
 movieControllers.controller('ListController', ['$scope','$http', function($scope, $http){
-	$http.get('../data/imdb250.json').success(function(data){
+	$http.get('./data/imdb250.json').success(function(data){
 		$scope.movies = data;
 		$scope.movieOrder = "rank";
 	});
 }]);
 
 movieControllers.controller('DetailController', ['$scope','$http' ,'$routeParams' , function ($scope, $http, $routeParams) {
-	$http.get('../data/imdb250.json').success(function(data){
+	$http.get('./data/imdb250.json').success(function(data){
 		$scope.movies = data;
 		$scope.whichItem  = $routeParams.itemID;
 
@@ -29,7 +29,7 @@ movieControllers.controller('DetailController', ['$scope','$http' ,'$routeParams
 }]);
 
 movieControllers.controller('GalleryController', ['$scope','$http', function ($scope, $http) {
-	$http.get('../data/imdb250.json').success(function(data){
+	$http.get('./data/imdb250.json').success(function(data){
 		$scope.movies = data;
 	});
 	$scope.filterBy = function(x){
