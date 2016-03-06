@@ -120,6 +120,7 @@ a:hover{
 		color:$blue-color;
 	}
 
+
 	.details_top{
 		height: 50px;
 	}
@@ -140,6 +141,12 @@ a:hover{
 			@include inner_box_img();
 		}
 	}
+	@media screen and (min-width: 1000px) {
+		.detail_box_outer{
+			float:left;
+		}
+	}
+
 	.details_text{
 		padding-top: 40px;
 		padding-bottom: 40px;
