@@ -1,5 +1,5 @@
 <div class="large-10 large-centered" id = "list">
-	<div class="search large-8 large-centered">
+	<div class="search large-8 small-11 small-centered large-centered">
 		<input ng-model ="query" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" class = "searchbox" autofocus>
 		<label>by:
 			<select ng-model="movieOrder">
@@ -8,17 +8,17 @@
 			</select>
 		</label>
 		<label>
-		 <div class="large-6 columns text-center">
+		 <div class="large-6 small-6 columns text-center">
 	      <input type="radio" ng-model="direction" name="direction" checked>
 	      Ascending
 		</div>
-		 <div class="large-6 columns text-center">
+		 <div class="large-6 small-6 columns text-center">
 	      <input type="radio" ng-model="direction" name="direction" value="reverse">
 	      Descending
 		</div>
 	    </label>
 	</div>
-	<div class="large-6 large-centered">
+	<div class="large-6 small-10 small-centered large-centered">
 		<div ng-repeat="item in movies | filter:query | orderBy:movieOrder:direction | limitTo : 30" class="large-12 outer_box">
 			<a href="#/details/{{movies.indexOf(item)}}">	
 				<div class="large-12 large-centered inner_box">
