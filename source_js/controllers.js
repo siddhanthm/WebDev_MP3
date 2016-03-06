@@ -35,5 +35,5 @@ movieControllers.controller('GalleryController', ['$scope','$http', function ($s
 	$scope.filterBy = function(x){
 		$scope.myfilterBy = x;
 	}
-	$scope.myfilterBy = "";
+	$scope.myfilterBy = '';
 }]);
