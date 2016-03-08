@@ -23,7 +23,7 @@ a:hover{
 }
 
 .small_heading{
-	font-size: 1.5em;
+	font-size: 1.8em;
 	padding-bottom: 20px;
 }
 
@@ -32,6 +32,12 @@ a:hover{
 	label{
 		color: white;
 		padding: 20px;
+	}
+
+	@media screen and (min-width: 640px) {
+		.gallery_option_all{
+			font-size: 1.4em;
+		}
 	}
 
 	.gallery_box{
@@ -135,7 +141,7 @@ a:hover{
 
 	.detail_box_outer{
 		padding: 10px;
-		height: 40vh;
+		height: 47vh;
 
 		.detail_box_inner{
 			@include inner_box_img();
